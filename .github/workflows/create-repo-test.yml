@@ -21,7 +21,7 @@ on:
         default: public
 
 jobs:
-  greet:
+  create_repo:
     runs-on: ubuntu-latest
 
     steps:
