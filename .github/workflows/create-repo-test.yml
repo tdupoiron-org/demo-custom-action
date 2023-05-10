@@ -29,7 +29,7 @@ jobs:
       uses: actions/checkout@v3.5.2
     
     - name: Create repository
-      uses: ./
+      uses: ndupoiron-ops/boostrap@main
       with:
         repo_owner: ${{ github.event.inputs.repo_owner }}
         repo_name: ${{ github.event.inputs.repo_name }}
