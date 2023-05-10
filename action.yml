@@ -10,16 +10,13 @@ inputs:
   repo_owner:
     description: The name of the repository
     required: true
-
   repo_name:
     description: The name of the repository
     required: true
-
   repo_visibility:
     description: The visibility of the repository
     required: false
     default: public
-
   token:
     description: The access token used to authenticate to the GitHub API
     required: true
