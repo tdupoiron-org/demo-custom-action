@@ -1,0 +1,37 @@
+name: 'ndupoiron - Create a repository'
+description: 'Create a repository'
+
+branding:
+  icon: 'arrow-right-circle'
+  color: 'green'
+
+inputs:
+
+  repo_owner:
+    description: The name of the repository
+    required: true
+
+  repo_name:
+    description: The name of the repository
+    required: true
+
+  repo_visibility:
+    description: The visibility of the repository
+    required: false
+    default: public
+
+  token:
+    description: The access token used to authenticate to the GitHub API
+    required: true
+
+outputs:
+  repo_id:
+    description: The ID of the repository
+  repo_full_name:
+    description: The full name of the repository
+  repo_url:
+    description: The URL of the repository
+
+runs:
+  using: "node16"
+  main: "dist/action.js"
