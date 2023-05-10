@@ -25,11 +25,8 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3.5.2
-    
-    - name: Create repository
-      uses: ndupoiron-ops/boostrap@main
+    - name: ndupoiron - Create a repository
+      uses: ndupoiron-ops/boostrap@v1.0.0
       with:
         repo_owner: ${{ github.event.inputs.repo_owner }}
         repo_name: ${{ github.event.inputs.repo_name }}
